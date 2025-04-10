@@ -1,0 +1,150 @@
+/* --- My Custom Heading Colors --- */
+
+/* Target H1 headings (Markdown: # Heading 1) */
+.markdown-preview-view h1,
+.cm-header-1 {
+    /* Live Preview and Reading View */
+    color: #E06C75;
+    /* Example: A nice red/pink */
+}
+
+/* Target H2 headings (Markdown: ## Heading 2) */
+.markdown-preview-view h2,
+.cm-header-2 {
+    color: #98C379;
+    /* Example: A pleasant green */
+}
+
+/* Target H3 headings (Markdown: ### Heading 3) */
+.markdown-preview-view h3,
+.cm-header-3 {
+    color: #61AFEF;
+    /* Example: A clear blue */
+}
+
+/* Target H4 headings (Markdown: #### Heading 4) */
+.markdown-preview-view h4,
+.cm-header-4 {
+    color: #C678DD;
+    /* Example: A soft purple */
+}
+
+/* Target H5 headings (Markdown: ##### Heading 5) */
+.markdown-preview-view h5,
+.cm-header-5 {
+    color: #D19A66;
+    /* Example: An orange/brown */
+}
+
+/* Target H6 headings (Markdown: ###### Heading 6) */
+.markdown-preview-view h6,
+.cm-header-6 {
+    color: #ABB2BF;
+    /* Example: A light grey */
+}
+
+/* --- Other Elements --- */
+
+/* Example: Coloring Bold Text (**) */
+.markdown-preview-view strong,
+.cm-strong {
+    color: #E5C07B;
+    /* Example: A warm yellow */
+}
+
+/* Example: Coloring Italic Text (*) */
+.markdown-preview-view em,
+.cm-em {
+    color: #56B6C2;
+    /* Example: A teal/cyan */
+}
+
+/* Example: Coloring Internal Links [[Link]] */
+.markdown-preview-view .internal-link,
+.cm-hmd-internal-link .cm-underline {
+    /* Selects the link text itself in Live Preview */
+    color: #61AFEF;
+    /* Example: Same blue as H3 */
+    /* You might need to experiment slightly with link selectors */
+}
+
+/* Example: Coloring External Links [Text](URL) */
+.markdown-preview-view .external-link,
+.cm-link .cm-underline {
+    /* Selects the link text itself in Live Preview */
+    color: #98C379;
+    /* Example: Same green as H2 */
+}
+
+/* Example: Coloring Blockquotes (>) */
+.markdown-preview-view blockquote,
+.HyperMD-quote {
+    /* Might need adjustment based on theme */
+    color: #ABB2BF;
+    /* Example: Light grey text */
+    border-left-color: #5fadec;
+    /* Example: Blue left border */
+}
+
+/* Links Styling - For both Reading and Editing modes */
+/* Reading mode */
+.markdown-preview-view .internal-link,
+.markdown-preview-view .markdown-rendered .internal-link,
+/* Editing mode */
+.cm-hmd-internal-link,
+.cm-link.cm-hmd-internal-link,
+span.cm-link.cm-hmd-internal-link,
+.cm-s-obsidian span.cm-link.cm-hmd-internal-link {
+    color: #82c4fa !important;
+    text-decoration: none;
+}
+
+.cm-link{
+    color: #82c4fa !important;
+}
+
+/* Hover effects for links */
+/* Reading mode */
+.markdown-preview-view .internal-link:hover,
+.markdown-preview-view .markdown-rendered .internal-link:hover,
+/* Editing mode */
+.cm-hmd-internal-link:hover,
+.cm-link.cm-hmd-internal-link:hover {
+    color: #61AFEF !important;
+    text-decoration: underline;
+}
+
+/* Table of Contents specific styling - both modes */
+/* Reading mode */
+.markdown-preview-view .markdown-rendered div[data-heading="Table of Contents"] .internal-link,
+.markdown-preview-view .markdown-rendered h2+ul .internal-link,
+/* Editing mode */
+.cm-line:has(.cm-header-1)+.cm-line .cm-hmd-internal-link,
+.cm-line:has(.cm-header-2)+.cm-line .cm-hmd-internal-link,
+.cm-line:has(.cm-header-3)+.cm-line .cm-hmd-internal-link,
+.cm-line:has(.cm-header-4)+.cm-line .cm-hmd-internal-link,
+.cm-line:has(.cm-header-5)+.cm-line .cm-hmd-internal-link,
+.cm-line:has(.cm-header-6)+.cm-line .cm-hmd-internal-link {
+    color: #82c4fa !important;
+    opacity: 0.9;
+}
+
+
+.markdown-source-view.mod-cm6 .cm-link .cm-underline, .markdown-source-view.mod-cm6 .cm-url .cm-underline {
+    color: rgb(77, 196, 239);
+    text-decoration-line: var(--link-external-decoration);
+}
+/* Remove any conflicting styles */
+.cm-hmd-internal-link .cm-underline {
+    color: inherit !important;
+}
+
+.is-focused .workspace-leaf.mod-active .view-header-title {
+    color: #ffd381;
+}
+
+.code-styler.code-styler-style-inline .cm-s-obsidian span.cm-inline-code, .code-styler.code-styler-style-inline .markdown-rendered :not(pre) > code:not([class*=blur]), .code-styler.code-styler-style-inline .reveal :not(pre) > code:not([class*=blur]), .code-styler.code-styler-style-inline code.code-styler-settings-inline-code {
+
+    background-color: #9999993b !important;
+
+}
