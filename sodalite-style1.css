@@ -148,3 +148,9 @@ span.cm-link.cm-hmd-internal-link,
     background-color: #9999993b !important;
 
 }
+
+/* for the words between backticks: like `Queue.c` */
+.code-styler.code-styler-style-inline .cm-s-obsidian span.cm-inline-code, .code-styler.code-styler-style-inline .markdown-rendered :not(pre) > code:not([class*=blur]), .code-styler.code-styler-style-inline .reveal :not(pre) > code:not([class*=blur]), .code-styler.code-styler-style-inline code.code-styler-settings-inline-code {
+    padding: 3px !important; 
+     
+}
