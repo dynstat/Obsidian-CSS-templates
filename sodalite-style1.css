@@ -1,5 +1,13 @@
 /* --- My Custom Heading Colors --- */
 
+
+/* Title on the page */
+.inline-title {
+    color: #db687c;
+    white-space: pre-wrap;
+    margin-block-end: var(--inline-title-margin-bottom);
+}
+
 /* Target H1 headings (Markdown: # Heading 1) */
 .markdown-preview-view h1,
 .cm-header-1 {
